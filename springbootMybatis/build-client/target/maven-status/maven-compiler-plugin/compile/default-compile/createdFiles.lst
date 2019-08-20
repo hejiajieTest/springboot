@@ -1,0 +1,4 @@
+cn\ffcs\tsp\msa\mybatis\dto\ManualInfoDTO.class
+cn\ffcs\tsp\msa\mybatis\dto\Pagination.class
+cn\ffcs\tsp\msa\mybatis\client\ISpringbootMybatisClient.class
+cn\ffcs\tsp\msa\mybatis\entity\ManualInfo.class
