@@ -18,27 +18,34 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
+  
 	<!-- spring-cloud -->
+	<!---->
         <dependency>
            <groupId>org.springframework.cloud</groupId>
            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
+		<!--注册中心客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+		<!--11
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+        </dependency>-->
+		<!--服务相互调用与熔断-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
+		<!--网管API-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
+		<!--配置中心-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
@@ -60,6 +67,7 @@
         <artifactId>mysql-connector-java</artifactId>
         <version>5.0.8</version>
      </dependency>
+     <!-- 数据库连接池 -->
  	 <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -83,11 +91,22 @@
 			<artifactId>commons-lang</artifactId>
 			<version>2.2</version>
 		</dependency>
+		  <!-- json 转换  start springDemo方法一中才用得到此包-->
+     	<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.4</version>
+		</dependency>
+	 <!-- json 转换 end -->
 		<!-- 开发工具：修改java代码无须重新运行 -->
 		<dependency>	   
 			<groupId>org.springframework.boot</groupId>    
 			<artifactId>spring-boot-devtools</artifactId>    
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
   </dependencies>
 <build>

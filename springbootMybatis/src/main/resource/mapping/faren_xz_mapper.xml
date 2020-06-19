@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ffcs.tsp.msa.mybatis.mapper.FarenXzMapper">
+
+    
+    
+    <insert id="saveList" parameterType="java.util.List">
+    insert into vs_faren_xz(name,value)
+    values
+    <foreach item="item" index="index" collection="list" separator="," >
+        (#{item.name},#{item.value})
+    </foreach>
+    </insert>
+    
+</mapper>

@@ -3,7 +3,9 @@ package cn.ffcs.tsp.msa.swagger.controller;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,5 +34,15 @@ public class SpringbootSwaggerDemo {
 		System.out.println(id);
 		System.out.println(jsonStr);
 		test.test();
+	}
+	
+	/**
+	* 本地服务实例的信息
+	* @return
+	*/
+	@GetMapping("/instance-info")
+	public ServiceInstance showInfo() {
+	ServiceInstance localServiceInstance = this.discoveryClient.getLocalServiceInstance();
+	return localServiceInstance;
 	}
 }

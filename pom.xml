@@ -73,5 +73,7 @@
     <module>springbootMybatis</module>
     <module>springbootSwagger</module>
     <module>springbootRegCenter</module>
+    <module>springbootConfig</module>
+    <module>springbootApiGetWay</module>
   </modules>
 </project>

@@ -3,9 +3,6 @@ package cn.ffcs.tsp.msa.mybatis.mapper;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
-
 import cn.ffcs.tsp.msa.mybatis.entity.ManualInfo;
 
 
